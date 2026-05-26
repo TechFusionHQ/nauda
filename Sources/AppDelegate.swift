@@ -59,12 +59,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private func updateStatusItemIcon(isActive: Bool) {
         guard let button = statusItem?.button else { return }
         
-        // Use Apple Symbols 7 "cup.and.saucer.fill" for active, and "cup.and.saucer" for inactive
-        let symbolName = isActive ? "cup.and.saucer.fill" : "cup.and.saucer"
-        
-        if let image = NSImage(systemSymbolName: symbolName, accessibilityDescription: "Nauda Keep Awake") {
-            // template = true tells macOS to automatically style the icon (black or white) matching dark or light menu bars
-            image.isTemplate = true
+        // Render custom vector Vietnamese coffee glass directly into menu bar status button
+        let iconView = VietnameseCoffeeIcon(isActive: isActive)
+        if let image = iconView.toNSImage(size: NSSize(width: 18, height: 18)) {
             button.image = image
         }
     }

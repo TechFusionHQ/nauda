@@ -98,26 +98,12 @@ struct CoffeeCupButton: View {
                         }
                     }
                 
-                // Cup icon using SF Symbols 7
-                Image(systemName: active ? "cup.and.saucer.fill" : "cup.and.saucer")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 72, height: 72)
-                    .foregroundStyle(
-                        active ?
-                        LinearGradient(
-                            colors: [Color.orange, Color(red: 0.85, green: 0.5, blue: 0.25)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ) :
-                        LinearGradient(
-                            colors: [Color.primary.opacity(0.35), Color.primary.opacity(0.15)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
+                // Custom vector Vietnamese coffee glass drawing
+                VietnameseCoffeeIcon(isActive: active)
+                    .frame(width: 76, height: 76)
+                    .opacity(active ? 1.0 : 0.6) // Subtle dimming when inactive
                     .scaleEffect(isHovering ? 1.05 : 1.0)
-                    .shadow(color: active ? Color.orange.opacity(0.4) : Color.clear, radius: isHovering ? 12 : 6)
+                    .shadow(color: active ? Color.orange.opacity(0.35) : Color.clear, radius: isHovering ? 12 : 6)
             }
         }
         .buttonStyle(.plain)
@@ -201,9 +187,9 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 // Header
                 HStack {
-                    Image(systemName: "cup.and.saucer.fill")
-                        .font(.title3)
-                        .foregroundColor(.orange)
+                    // Vector Vietnamese coffee icon next to App name
+                    VietnameseCoffeeIcon(isActive: true)
+                        .frame(width: 22, height: 22)
                     Text("Nauda")
                         .font(.headline)
                         .fontWeight(.bold)
@@ -301,7 +287,7 @@ struct ContentView: View {
                 
                 // Footer / Actions
                 HStack(alignment: .center) {
-                    Text("v1.0")
+                    Text("v0.0.1")
                         .font(.caption2)
                         .foregroundColor(.secondary.opacity(0.7))
                     Spacer()

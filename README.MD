@@ -17,17 +17,22 @@ The name **Nauda** is derived from **"Nâu đá"** (also known as *Cà phê sữ
 
 ---
 
-## 🛠️ One-Click Build & Run
+## 🛠️ Build & Run Options
 
-Nauda is built using pure Swift, AppKit, and SwiftUI, with zero external dependencies. It compiles in seconds directly from the command line using native tools.
+You can build Nauda using either the native Xcode project (recommended for App Store development) or the lightweight one-click build script.
 
-### 1. Compile the App
-Run the build script to clean, compile, and bundle the app into a standard macOS `.app` package:
+### Option A: Native Xcode Project (App Store Ready)
+1. Double-click the **[Nauda.xcodeproj](Nauda.xcodeproj)** package to open it in Xcode.
+2. Select the `Nauda` target and build/run with `Cmd + R`.
+3. To package the app for upload to the App Store, choose **Product -> Archive** from the menu bar.
+
+*Note: This project is pre-configured with the **App Sandbox**, **Hardened Runtime**, and includes the official asset catalog containing the app icon in all required dimensions.*
+
+### Option B: Quick Command Line Build
+Run the build script to quickly compile and package the app into a standard macOS `.app` bundle:
 ```bash
 ./build.sh
 ```
-
-### 2. Run the App
 Launch the compiled app directly:
 ```bash
 open build/Nauda.app

@@ -19,6 +19,11 @@ echo "🔨 Compiling Swift sources..."
 # and linking AppKit/SwiftUI frameworks.
 swiftc -O -sdk "$(xcrun --show-sdk-path --sdk macosx)" Sources/*.swift -o "${MACOS_DIR}/${APP_NAME}"
 
+echo "📁 Copying resources..."
+RESOURCES_DIR="${APP_DIR}/Contents/Resources"
+mkdir -p "${RESOURCES_DIR}"
+cp Sources/nauda.png "${RESOURCES_DIR}/"
+
 echo "📝 Creating Info.plist..."
 cat <<EOF > "${APP_DIR}/Contents/Info.plist"
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +43,7 @@ cat <<EOF > "${APP_DIR}/Contents/Info.plist"
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>LSMinimumSystemVersion</key>
-    <string>11.0</string>
+    <string>12.0</string>
     <key>LSUIElement</key>
     <true/>
 </dict>
