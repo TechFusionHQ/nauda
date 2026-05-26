@@ -13,7 +13,7 @@ The name **Nauda** is derived from **"Nâu đá"** (also known as _Cà phê sữ
 ## ✨ Features
 
 - **Keep Awake**: Prevents display and system idle sleep on macOS with a single click.
-- **Dynamic Icons**: Shows a hot, filled coffee cup (`cup.and.saucer.fill`) in the status bar when active, and an empty cup (`cup.and.saucer`) when paused or inactive.
+- **Dynamic Icons**: Shows a hot, filled coffee cup in the status bar when active, and an empty cup when paused or inactive.
 - **Elegantly Scheduled**: Set a start and end time (e.g., 9:00 AM – 5:00 PM) to automatically manage your Mac's sleep prevention.
 - **Repeat Options**: Choose to apply the schedule **Everyday** or restrict it only to **Weekdays**.
 - **Manual Sleep Auto-Pause & Resume**: If you manually put your Mac to sleep (or close the lid), Nauda automatically pauses itself so your computer can sleep peacefully. Once you wake your Mac back up, Nauda automatically resumes sleep prevention if it is still within the active scheduled window.
