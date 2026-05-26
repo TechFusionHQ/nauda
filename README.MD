@@ -1,0 +1,58 @@
+# ☕ Nauda (Nâu Đá)
+
+**Nauda** is a lightweight, modern, and beautiful macOS menu bar app designed to keep your Mac awake. 
+
+The name **Nauda** is derived from **"Nâu đá"** (also known as *Cà phê sữa đá*), a famous, rich, and delicious Vietnamese iced coffee with condensed milk. Just like a good cup of Vietnamese coffee keeps you energized and focused, **Nauda** keeps your Mac awake and ready whenever you need it. It is a must-try coffee experience in real life, and a must-have utility for your Mac!
+
+---
+
+## ✨ Features
+
+- **Keep Awake**: Prevents display and system idle sleep on macOS with a single click.
+- **Dynamic Icons**: Shows a hot, filled coffee cup (`cup.and.saucer.fill`) in the status bar when active, and an empty cup (`cup.and.saucer`) when paused or inactive.
+- **Elegantly Scheduled**: Set a start and end time (e.g., 9:00 AM – 5:00 PM) to automatically manage your Mac's sleep prevention.
+- **Repeat Options**: Choose to apply the schedule **Everyday** or restrict it only to **Weekdays**.
+- **Manual Sleep Auto-Pause & Resume**: If you manually put your Mac to sleep (or close the lid), Nauda automatically pauses itself so your computer can sleep peacefully. Once you wake your Mac back up, Nauda automatically resumes sleep prevention if it is still within the active scheduled window.
+- **Premium Aesthetics**: Built with native SwiftUI, featuring smooth animations, a pulsing coffee glow, steam loops rising from your cup, and a glassmorphic background design that blends perfectly with macOS.
+
+---
+
+## 🛠️ One-Click Build & Run
+
+Nauda is built using pure Swift, AppKit, and SwiftUI, with zero external dependencies. It compiles in seconds directly from the command line using native tools.
+
+### 1. Compile the App
+Run the build script to clean, compile, and bundle the app into a standard macOS `.app` package:
+```bash
+./build.sh
+```
+
+### 2. Run the App
+Launch the compiled app directly:
+```bash
+open build/Nauda.app
+```
+Once opened, you will see a coffee cup icon appear in your macOS status bar at the top of your screen.
+
+---
+
+## 📖 Help & Usage Guide
+
+- **Toggle Awake State**: Click the menu bar cup icon to open the dashboard, then click the large coffee cup button. Alternatively, close the dashboard by clicking outside.
+- **Schedule Setup**: Toggle "Schedule Keep Awake" inside the dashboard. Use the time pickers to set your custom window, and select between **Everyday** or **Weekdays** repeating intervals.
+- **Pause Temporarily**: Click the cup inside the dashboard to pause sleep-prevention manually at any time.
+- **Quit Nauda**: Hover over the bottom-right corner of the panel and click the small power icon button (`power`).
+
+---
+
+## 🚀 App Store Link
+
+*Coming Soon!*
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+Copyright © 2026 [TECHFUSION COMPANY LIMITED](https://www.techfusion.dev). All rights reserved.
