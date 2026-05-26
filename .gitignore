@@ -9,3 +9,5 @@ DerivedData/
 *.xcuserdata
 xcuserdata/
 .swiftpm/
+DISTRIBUTE.md
+distribute.sh
