@@ -60,7 +60,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         guard let button = statusItem?.button else { return }
         
         // Render custom vector Vietnamese coffee glass directly into menu bar status button
-        let iconView = VietnameseCoffeeIcon(isActive: isActive)
+        let iconView = VietnameseCoffeeIcon(isActive: isActive, isMonochrome: true)
         if let image = iconView.toNSImage(size: NSSize(width: 18, height: 18)) {
             button.image = image
         }
