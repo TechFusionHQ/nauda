@@ -1,8 +1,12 @@
-# ☕ Nauda (Nâu Đá)
+# Nauda (Nâu Đá)
 
-**Nauda** is a lightweight, modern, and beautiful macOS menu bar app designed to keep your Mac awake. 
+<p align="center">
+  <img src="Sources/nauda.png" width="250" alt="Nauda Logo" />
+</p>
 
-The name **Nauda** is derived from **"Nâu đá"** (also known as *Cà phê sữa đá*), a famous, rich, and delicious Vietnamese iced coffee with condensed milk. Just like a good cup of Vietnamese coffee keeps you energized and focused, **Nauda** keeps your Mac awake and ready whenever you need it. It is a must-try coffee experience in real life, and a must-have utility for your Mac!
+**Nauda** is a lightweight, modern, and beautiful macOS menu bar app designed to keep your Mac awake.
+
+The name **Nauda** is derived from **"Nâu đá"** (also known as _Cà phê sữa đá_), a famous, rich, and delicious Vietnamese iced coffee with condensed milk. Just like a good cup of Vietnamese coffee keeps you energized and focused, **Nauda** keeps your Mac awake and ready whenever you need it. It is a must-try coffee experience in real life, and a must-have utility for your Mac!
 
 ---
 
@@ -22,21 +26,27 @@ The name **Nauda** is derived from **"Nâu đá"** (also known as *Cà phê sữ
 You can build Nauda using either the native Xcode project (recommended for App Store development) or the lightweight one-click build script.
 
 ### Option A: Native Xcode Project (App Store Ready)
+
 1. Double-click the **[Nauda.xcodeproj](Nauda.xcodeproj)** package to open it in Xcode.
 2. Select the `Nauda` target and build/run with `Cmd + R`.
 3. To package the app for upload to the App Store, choose **Product -> Archive** from the menu bar.
 
-*Note: This project is pre-configured with the **App Sandbox**, **Hardened Runtime**, and includes the official asset catalog containing the app icon in all required dimensions.*
+_Note: This project is pre-configured with the **App Sandbox**, **Hardened Runtime**, and includes the official asset catalog containing the app icon in all required dimensions._
 
 ### Option B: Quick Command Line Build
+
 Run the build script to quickly compile and package the app into a standard macOS `.app` bundle:
+
 ```bash
 ./build.sh
 ```
+
 Launch the compiled app directly:
+
 ```bash
 open build/Nauda.app
 ```
+
 Once opened, you will see a coffee cup icon appear in your macOS status bar at the top of your screen.
 
 ---
@@ -52,7 +62,7 @@ Once opened, you will see a coffee cup icon appear in your macOS status bar at t
 
 ## 🚀 App Store Link
 
-*Coming Soon!*
+_Coming Soon!_
 
 ---
 
