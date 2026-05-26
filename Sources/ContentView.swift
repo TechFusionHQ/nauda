@@ -303,11 +303,11 @@ struct ContentView: View {
     // Dynamic text based on current operation state
     private var statusTitle: String {
         if state.isActive {
-            return "Vietnamese coffee is the best 👀🇻🇳"
+            return "Vietnamese coffee is the best 🇻🇳"
         } else if state.isPaused {
-            return "Paused ☕️🚫"
+            return "Paused"
         } else {
-            return "Waiting for your coffee ☕️✨"
+            return "Waiting for your coffee"
         }
     }
     
